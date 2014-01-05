@@ -1,0 +1,22 @@
+{
+  "name": "Coders-Classroom",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Glavin001/Coders-Classroom",
+  "authors": [
+    "Glavin Wiechert <Glavin.Wiechert@gmail.com>"
+  ],
+  "description": "Programmer-centric Course Management System, designed by coders for coders.",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3.0.3"
+  }
+}

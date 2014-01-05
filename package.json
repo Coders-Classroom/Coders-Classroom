@@ -1,0 +1,45 @@
+{
+  "name": "Coders-Classroom",
+  "version": "0.0.0",
+  "description": "Programmer-centric Course Management System, designed by coders for coders.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "./node_modules/bower/bin/bower install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Glavin001/Coders-Classroom.git"
+  },
+  "keywords": [
+    "course",
+    "management",
+    "system",
+    "CMS",
+    "virtual",
+    "learning",
+    "environment",
+    "VLE",
+    "learning",
+    "management",
+    "system",
+    "LMS"
+  ],
+  "author": "Glavin Wiechert <glavin.wiechert@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Glavin001/Coders-Classroom/issues"
+  },
+  "homepage": "https://github.com/Glavin001/Coders-Classroom",
+  "dependencies": {
+    "bower": "1.2.8",
+    "gitlab": "0.4.1",
+    "passport": "0.1.18",
+    "feathers": "0.2.0",
+    "mongoose": "3.8.3",
+    "icalendar": "0.6.3"
+  },
+  "devDependencies": {
+    "mocha": "1.16.2"
+  }
+}
