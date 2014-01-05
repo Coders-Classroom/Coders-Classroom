@@ -20,9 +20,33 @@ There are many [Course Management System (CMS), also known as a Learning Managem
 - [Online Calendar viewer](http://arshaw.com/fullcalendar/)
 
 ## Features
-- Education (teacher) and Student accounts
-- Create classes 
+- All accounts can act as Educator (teacher) and/or Student accounts, depending on usage.
+- Easily create new online classes.
 - Create exercises / assignments (Unit Testing to partially automated grading) with online submission for Students
 - Calendar for events (such as classes, exercises / assignments due dates, exams) and CalDAV to allow subscription to calendar on desktop/mobile calendar applications
 - Support for basic compiing and execution of code in the following common programming languages: C, C++, Python, and JavaScript (Node.js).
 
+
+-----
+
+## High-Level Description of Concept
+
+## Basics
+The server application is not a Git server. 
+It [pulls](https://www.kernel.org/pub/software/scm/git/docs/git-pull.html) the code from the Git repository specified. 
+
+### Sign Up / Login
+Accounts are linked to either a [GitLab](http://gitlab.org/) account.
+The user must first have an account first a GitLab installation then sign up and sign in with that account. The user's email is used as the unqiue username. A local GitLab installation is choosen because this can be setup by an organization and run for educational purposes for free and allow for both Private and Public projects.
+
+### Creating a Class
+An Educator can easily create a new class. In fact, a student can act as an "Open-Source Educator" and create their own Class.
+
+### Creating an Exercise
+An exercise is strictly an assignment where the submitted information is code that can be Unit Tested and graded automatically.
+
+### Creating an Assignment
+An assignent can consist of Exercises (modular programs that can be Unit Tested) or written pieces that will have to be manually graded.
+
+## Submitting an Exercise / Assignment
+Submitting an exercise or assignment is as easy as providing a Git repository URL. The Class Admin (Educator) will be added as a view-only Member of the project, so that the repository may be pulled.
