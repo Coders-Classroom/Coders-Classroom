@@ -43,7 +43,7 @@ The user must first have an account first a GitLab installation then sign up and
 An Educator can easily create a new class. In fact, a student can act as an "Open-Source Educator" and create their own Class.
 
 ### Creating an Exercise
-An exercise is strictly an assignment where the submitted information is code that can be Unit Tested and graded automatically.
+An exercise is strictly an assignment where the submitted information is code that can be Unit Tested and graded automatically. Tests are performed on [Standard Input and Output](http://en.wikipedia.org/wiki/Standard_streams#Standard_input_.28stdin.29).
 
 ### Creating an Assignment
 An assignent can consist of Exercises (modular programs that can be Unit Tested) or written pieces that will have to be manually graded.
