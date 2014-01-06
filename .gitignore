@@ -1,20 +1,27 @@
-
-lib-cov
-*.seed
-*.log
-*.csv
-*.dat
-*.out
-*.pid
-*.gz
-
-pids
-logs
-results
-
-npm-debug.log
 node_modules
+temp
+dist
+.sass-cache
+.tmp
+app/bower_components
 
-# Bower
-bower_components
+# Mac
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must ends with two \r.
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Vim
+*.swp
+*.swo
+*~
 

@@ -1,22 +1,16 @@
 {
-  "name": "Coders-Classroom",
+  "name": "coders-classroom",
   "version": "0.0.0",
-  "homepage": "https://github.com/Glavin001/Coders-Classroom",
-  "authors": [
-    "Glavin Wiechert <Glavin.Wiechert@gmail.com>"
-  ],
-  "description": "Programmer-centric Course Management System, designed by coders for coders.",
-  "main": "index.js",
-  "license": "MIT",
-  "private": true,
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
   "dependencies": {
-    "bootstrap": "3.0.3"
+    "ember": "1.2.0",
+    "ember-data-shim": "1.0.0-beta.2",
+    "bootstrap-sass": "~3.0.0"
+    
+  },
+  "resolutions": {
+    "ember": "1.0.0"
+  },
+  "devDependencies": {
+    "ember-mocha-adapter": "0.1.2"
   }
 }
