@@ -9,6 +9,10 @@ There are many [Course Management System (CMS), also known as a Learning Managem
 ## Students Will Learn
 - **Git** - [Git](http://git-scm.com/) (backed by [GitLab HQ](http://gitlab.org/)) is used as the medium for storage, updating, and sharing (including submitting) student exercises and assignents
 - **Unit Testing** - Automated grading of exercises are performed in a similar manner as [Unit Tests](http://en.wikipedia.org/wiki/Unit_testing), so students can get used to making their own, and having their code evaulated by tests, such as in [Test-Driven Development](http://en.wikipedia.org/wiki/Test-driven_development).
+- **Issue Tracking** - With [GitLab]((http://gitlab.org/) backing each student's project, they are encouraged to create and resolve issues as they progress through their class exercises and assignments.
+- **Version Control** - [Git](http://git-scm.com/) is a distributed version control system, and knowing how to use a version control system will be important when working on industry-standard programs.
+- **Team Work** - With [GitLab]((http://gitlab.org/), it is easy to add members to projects and collaborate on projects; and the Issue Tracker makes it even easier to manage who is doing what.
+- **Deadlines / Milestones** - It is very important hit your project deadlines. This should be the case for both work and school.
 
 ## Foundation
 - Written in [Node.js](http://nodejs.org/)
