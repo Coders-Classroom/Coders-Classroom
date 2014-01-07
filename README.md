@@ -4,18 +4,23 @@ Coders Classroom
 Online classroom environment, designed by coders for coders. Great for educators and students alike.
 
 ## Reason for creating this Application
-There are many [Course Management System (CMS), also known as a Learning Management System (LMS) or a Virtual Learning Environment (VLE), the one I am most familiar with being Moodle](https://moodle.org/). These systems are designed for learning in general, with many different subjects. **Coders Classroom** is designed from the ground up with programmers in mind, and so will be very powerful in the hands of both educators and students who .
+There are many [Course Management System (CMS), also known as a Learning Management System (LMS) or a Virtual Learning Environment (VLE), the one I am most familiar with being Moodle](https://moodle.org/). These systems are designed for learning in general, with many different subjects. **Coders Classroom** is designed from the ground up with programmers in mind, and so will be very powerful in the hands of both educators and students who know or want to learn about programming.
+
+## Students Will Learn
+- **Git** - [Git](http://git-scm.com/) (backed by [GitLab HQ](http://gitlab.org/)) is used as the medium for storage, updating, and sharing (including submitting) student exercises and assignents
+- **Unit Testing** - Automated grading of exercises are performed in a similar manner as [Unit Tests](http://en.wikipedia.org/wiki/Unit_testing), so students can get used to making their own, and having their code evaulated by tests, such as in [Test-Driven Development](http://en.wikipedia.org/wiki/Test-driven_development).
 
 ## Foundation
 - Written in [Node.js](http://nodejs.org/)
 - Built with [Git, distributed version control system,](http://git-scm.com/) in mind. https://github.com/nodegit/nodegit
-- Blog style Classrooms, https://github.com/tommy351/hexo
-- [LDAP](http://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol) server, http://ldapjs.org/
+- Blog style Classrooms, with ability for Educators to upload miscellaneous content and link resources. 
 - [Twitter Bootstrap 3.0](http://getbootstrap.com/)
-- [Gitlab HQ](http://gitlab.org/) support, https://github.com/moul/node-gitlab
-- [Socket.io](http://socket.io/) for asychronous / realtime updating
-- [MongoDB](http://www.mongodb.org/) for database
-- [Passportjs](http://passportjs.org/) for authentication
+- [GitLab HQ](http://gitlab.org/) support, https://github.com/moul/node-gitlab
+- [Feathers.js API](http://feathersjs.com/)
+- [Socket.io](http://socket.io/) for asychronous / realtime updating (included in Feathers.js)
+- [Express.js](http://expressjs.com/) for RESTful API (included in Feather.js)
+- [MongoDB](http://www.mongodb.org/) for server-side database.
+- [Passportjs](http://passportjs.org/) for API authentication.
 - [iCalendar / CalDAV support](http://en.wikipedia.org/wiki/ICalendar), https://github.com/tritech/node-icalendar
 - [Online Calendar viewer](http://arshaw.com/fullcalendar/)
 
@@ -48,5 +53,5 @@ An exercise is strictly an assignment where the submitted information is code th
 ### Creating an Assignment
 An assignent can consist of Exercises (modular programs that can be Unit Tested) or written pieces that will have to be manually graded.
 
-## Submitting an Exercise / Assignment
+### Submitting an Exercise / Assignment
 Submitting an exercise or assignment is as easy as providing a Git repository URL. The Class Admin (Educator) will be added as a view-only Member of the project, so that the repository may be pulled.
