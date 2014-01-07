@@ -7,7 +7,7 @@ Online classroom environment, designed by coders for coders. Great for educators
 There are many [Course Management System (CMS), also known as a Learning Management System (LMS) or a Virtual Learning Environment (VLE), the one I am most familiar with being Moodle](https://moodle.org/). These systems are designed for learning in general, with many different subjects. **Coders Classroom** is designed from the ground up with programmers in mind, and so will be very powerful in the hands of both educators and students who know or want to learn about programming.
 
 ## Students Will Learn
-- **Git** - [Git](http://git-scm.com/) (backed by [GitLab HQ](http://gitlab.org/)) is used as the medium for storage, updating, and sharing (including submitting) student exercises and assignents
+- **Git** - [Git](http://git-scm.com/) (backed by [GitLab HQ](http://gitlab.org/)) is used as the medium for storing, updating, and sharing (including submitting) student exercises and assignents.
 - **Unit Testing** - Automated grading of exercises are performed in a similar manner as [Unit Tests](http://en.wikipedia.org/wiki/Unit_testing), so students can get used to making their own, and having their code evaulated by tests, such as in [Test-Driven Development](http://en.wikipedia.org/wiki/Test-driven_development).
 - **Issue Tracking** - With [GitLab]((http://gitlab.org/) backing each student's project, they are encouraged to create and resolve issues as they progress through their class exercises and assignments.
 - **Version Control** - [Git](http://git-scm.com/) is a distributed version control system, and knowing how to use a version control system will be important when working on industry-standard programs.
@@ -17,7 +17,7 @@ There are many [Course Management System (CMS), also known as a Learning Managem
 ## Foundation
 - Written in [Node.js](http://nodejs.org/)
 - Built with [Git, distributed version control system,](http://git-scm.com/) in mind. https://github.com/nodegit/nodegit
-- Blog style Classrooms, with ability for Educators to upload miscellaneous content and link resources. 
+- [Ember.js](http://emberjs.com/), a JavaScript framework for creating ambitious web applications
 - [Twitter Bootstrap 3.0](http://getbootstrap.com/)
 - [GitLab HQ](http://gitlab.org/) support, https://github.com/moul/node-gitlab
 - [Feathers.js API](http://feathersjs.com/)
@@ -31,12 +31,17 @@ There are many [Course Management System (CMS), also known as a Learning Managem
 ## Features
 - All accounts can act as Educator (teacher) and/or Student accounts, depending on usage.
 - Easily create new online classes.
+- Blog style Classrooms, with ability for Educators to upload miscellaneous content and link resources. 
 - Create exercises / assignments (Unit Testing to partially automated grading) with online submission for Students
 - Calendar for events (such as classes, exercises / assignments due dates, exams) and CalDAV to allow subscription to calendar on desktop/mobile calendar applications
 - Support for basic compiing and execution of code in the following common programming languages: C, C++, Python, and JavaScript (Node.js).
 
-
 -----
+
+## Contributing
+
+Please see this issue: https://github.com/Glavin001/Coders-Classroom/issues/1
+
 
 ## High-Level Description of Concept
 
