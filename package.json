@@ -1,7 +1,25 @@
 {
   "name": "coders-classroom",
   "version": "0.0.0",
-  "dependencies": {},
+  "description": "Programmer-centric Course Management System, designed by coders for coders.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Glavin001/Coders-Classroom.git"
+  },
+  "author": "Glavin Wiechert <glavin.wiechert@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Glavin001/Coders-Classroom/issues"
+  },
+  "homepage": "https://github.com/Glavin001/Coders-Classroom",
+  "dependencies": {
+    "bower": "1.2.8",
+     "gitlab": "0.5.2",
+     "passport": "0.1.18",
+     "feathers": "0.2.0",
+     "mongoose": "3.8.3",
+     "icalendar": "0.6.3"
+  },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-copy": "~0.4.1",

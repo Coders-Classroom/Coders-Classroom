@@ -2,10 +2,11 @@
   "name": "coders-classroom",
   "version": "0.0.0",
   "dependencies": {
-    "ember": "1.2.0",
-    "ember-data-shim": "1.0.0-beta.2",
-    "bootstrap-sass": "~3.0.0"
-    
+    "ember": "1.2.0"
+    ,"ember-data-shim": "1.0.0-beta.2"
+    ,"bootstrap-sass": "~3.0.0"
+    ,"showdown": "0.3.1"
+    ,"moment": "2.5.0"
   },
   "resolutions": {
     "ember": "1.0.0"

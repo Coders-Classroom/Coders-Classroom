@@ -1,4 +1,6 @@
-var CodersClassroom = window.CodersClassroom = Ember.Application.create();
+var CodersClassroom = window.CodersClassroom = Ember.Application.create({
+    LOG_TRANSITIONS: true
+});
 
 /* Order and include as you please. */
 require('scripts/controllers/*');
