@@ -12,12 +12,18 @@ var mountFolder = function (connect, dir) {
 // use this if you want to match all subfolders:
 // 'test/spec/**/*.js'
 
+var path = require('path');
+
 module.exports = function (grunt) {
     // show elapsed time at the end
     require('time-grunt')(grunt);
     // load all grunt tasks
     require('load-grunt-tasks')(grunt);
+    
+    grunt.registerTask('myServer', ['express', 'express-keepalive']);
 
+    console.log( path.resolve(__dirname, './server/index.js') );
+    
     // configurable paths
     var yeomanConfig = {
         app: 'app',
@@ -44,11 +50,37 @@ module.exports = function (grunt) {
                     livereload: LIVERELOAD_PORT
                 },
                 files: [
+                    // Ember.js
                     '.tmp/scripts/*.js',
                     '<%= yeoman.app %>/*.html',
                     '{.tmp,<%= yeoman.app %>}/styles/{,*/}*.css',
                     '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
+                    // Server
+                    ,'server/**'
                 ]
+            }
+        },
+        express: {
+            options: {
+                    port: '<%= connect.options.port %>',
+                    hostname: '<%= connect.options.hostname %>'
+            },
+            livereload: {
+                server: path.resolve(__dirname, './server/index.js')
+                , bases: [ 
+                        path.resolve(__dirname, '.tmp')
+                        , path.resolve(__dirname, yeomanConfig.app) 
+                ]
+                , livereload: true // if you just specify `true`, default port `35729` will be used
+                , serverreload: true
+            },
+            dist: {
+                bases: [ 
+                        path.resolve(__dirname, '.tmp')
+                        , path.resolve(__dirname, yeomanConfig.dist) 
+                ]
+                , livereload: true // if you just specify `true`, default port `35729` will be used
+                , serverreload: true
             }
         },
         connect: {
@@ -63,7 +95,8 @@ module.exports = function (grunt) {
                         return [
                             lrSnippet,
                             mountFolder(connect, '.tmp'),
-                            mountFolder(connect, yeomanConfig.app)
+                            mountFolder(connect, yeomanConfig.app),
+                            require('./server')
                         ];
                     }
                 }
