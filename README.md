@@ -2,7 +2,7 @@ Coders Classroom
 ================
 
 [![Build Status](https://travis-ci.org/Coders-Classroom/Coders-Classroom.png?branch=master)](https://travis-ci.org/Coders-Classroom/Coders-Classroom)
-[![Dependency Status](https://david-dm.org/Coders-Classroom/Coders-Classroom.png)](https://david-dm.org/Glavin001/Coders-Classroom)
+[![Dependency Status](https://david-dm.org/Coders-Classroom/Coders-Classroom.png)](https://david-dm.org/Coders-Classroom/Coders-Classroom)
 [![authors](https://sourcegraph.com/api/repos/github.com/Coders-Classroom/Coders-Classroom/badges/authors.png)](https://sourcegraph.com/github.com/Coders-Classroom/Coders-Classroom)
 [![Total views](https://sourcegraph.com/api/repos/github.com/Coders-Classroom/Coders-Classroom/counters/views.png)](https://sourcegraph.com/github.com/Coders-Classroom/Coders-Classroom)
 [![Views in the last 24 hours](https://sourcegraph.com/api/repos/github.com/Coders-Classroom/Coders-Classroom/counters/views-24h.png)](https://sourcegraph.com/github.com/Coders-Classroom/Coders-Classroom)
@@ -19,7 +19,7 @@ Online classroom environment, designed by coders for coders. Great for educators
 Run the following Bash command:
 
 ```bash
-git clone https://github.com/Glavin001/Coders-Classroom.git && \
+git clone https://github.com/Coders-Classroom/Coders-Classroom.git && \
 node install
 ```
 
@@ -34,7 +34,7 @@ See the [docs](docs/) directory for more information.
 
 ### Contributing
 
-Please see this issue: https://github.com/Glavin001/Coders-Classroom/issues/1
+Please see this issue: https://github.com/Coders-Classroom/Coders-Classroom/issues/1
 
 -----
 
