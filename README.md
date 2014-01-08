@@ -84,6 +84,9 @@ Accounts are linked to either a [GitLab](http://gitlab.org/) account.
 The user must first have an account first a GitLab installation then sign up and sign in with that account. The user's email is used as the unqiue username. A local GitLab installation is choosen because this can be setup by an organization and run for educational purposes for free and allow for both Private and Public projects.
 
 ### Creating a Class
+
+![What happens when creating a class](https://docs.google.com/drawings/d/1D-ZWZfRpOhdCo1X5mSXc2Nr8o5pkeB2wboKX_lEDZio/pub?w=1549&amp;h=743)
+
 An Educator can easily create a new class. In fact, a student can act as an "Open-Source Educator" and create their own Class.
 
 ### Creating an Exercise
