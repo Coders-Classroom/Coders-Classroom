@@ -1,12 +1,12 @@
 Coders Classroom
 ================
 
-[![Build Status](https://travis-ci.org/Glavin001/Coders-Classroom.png?branch=master)](https://travis-ci.org/Glavin001/Coders-Classroom)
-[![Dependency Status](https://david-dm.org/Glavin001/Coders-Classroom.png)](https://david-dm.org/Glavin001/Coders-Classroom)
-[![status](https://sourcegraph.com/api/repos/github.com/Glavin001/Coders-Classroom/badges/status.png)](https://sourcegraph.com/github.com/Glavin001/Coders-Classroom)
-[![authors](https://sourcegraph.com/api/repos/github.com/Glavin001/Coders-Classroom/badges/authors.png)](https://sourcegraph.com/github.com/Glavin001/Coders-Classroom)
-[![Total views](https://sourcegraph.com/api/repos/github.com/Glavin001/Coders-Classroom/counters/views.png)](https://sourcegraph.com/github.com/Glavin001/Coders-Classroom)
-[![Views in the last 24 hours](https://sourcegraph.com/api/repos/github.com/Glavin001/Coders-Classroom/counters/views-24h.png)](https://sourcegraph.com/github.com/Glavin001/Coders-Classroom)
+[![Build Status](https://travis-ci.org/Coders-Classroom/Coders-Classroom.png?branch=master)](https://travis-ci.org/Glavin001/Coders-Classroom)
+[![Dependency Status](https://david-dm.org/Coders-Classroom/Coders-Classroom.png)](https://david-dm.org/Glavin001/Coders-Classroom)
+[![status](https://sourcegraph.com/api/repos/github.com/Coders-Classroom/Coders-Classroom/badges/status.png)](https://sourcegraph.com/github.com/Glavin001/Coders-Classroom)
+[![authors](https://sourcegraph.com/api/repos/github.com/Coders-Classroom/Coders-Classroom/badges/authors.png)](https://sourcegraph.com/github.com/Glavin001/Coders-Classroom)
+[![Total views](https://sourcegraph.com/api/repos/github.com/Coders-Classroom/Coders-Classroom/counters/views.png)](https://sourcegraph.com/github.com/Glavin001/Coders-Classroom)
+[![Views in the last 24 hours](https://sourcegraph.com/api/repos/github.com/Coders-Classroom/Coders-Classroom/counters/views-24h.png)](https://sourcegraph.com/github.com/Glavin001/Coders-Classroom)
 
 Online classroom environment, designed by coders for coders. Great for educators and students alike.
 
