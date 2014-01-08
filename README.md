@@ -32,6 +32,10 @@ grunt server
 
 See the [docs](docs/) directory for more information.
 
+### Contributing
+
+Please see this issue: https://github.com/Glavin001/Coders-Classroom/issues/1
+
 -----
 
 ## Reason for creating this Application
@@ -73,11 +77,6 @@ There are many [Course Management System (CMS), also known as a Learning Managem
 - Support for basic compiing and execution of code in the following common programming languages: C, C++, Python, and JavaScript (Node.js).
 
 -----
-
-## Contributing
-
-Please see this issue: https://github.com/Glavin001/Coders-Classroom/issues/1
-
 
 ## High-Level Description of Concept
 
