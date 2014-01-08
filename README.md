@@ -3,7 +3,6 @@ Coders Classroom
 
 [![Build Status](https://travis-ci.org/Coders-Classroom/Coders-Classroom.png?branch=master)](https://travis-ci.org/Coders-Classroom/Coders-Classroom)
 [![Dependency Status](https://david-dm.org/Coders-Classroom/Coders-Classroom.png)](https://david-dm.org/Glavin001/Coders-Classroom)
-[![status](https://sourcegraph.com/api/repos/github.com/Coders-Classroom/Coders-Classroom/badges/status.png)](https://sourcegraph.com/github.com/Coders-Classroom/Coders-Classroom)
 [![authors](https://sourcegraph.com/api/repos/github.com/Coders-Classroom/Coders-Classroom/badges/authors.png)](https://sourcegraph.com/github.com/Coders-Classroom/Coders-Classroom)
 [![Total views](https://sourcegraph.com/api/repos/github.com/Coders-Classroom/Coders-Classroom/counters/views.png)](https://sourcegraph.com/github.com/Coders-Classroom/Coders-Classroom)
 [![Views in the last 24 hours](https://sourcegraph.com/api/repos/github.com/Coders-Classroom/Coders-Classroom/counters/views-24h.png)](https://sourcegraph.com/github.com/Coders-Classroom/Coders-Classroom)
