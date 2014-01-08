@@ -8,6 +8,6 @@ It will hwalk you through installation, including but not limited to: most commo
 Run the Node.js script:
 
 ```bash
-node install.js
+node install
 ```
 
