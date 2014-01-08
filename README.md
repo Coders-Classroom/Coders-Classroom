@@ -24,6 +24,13 @@ git clone https://github.com/Glavin001/Coders-Classroom.git && \
 node install
 ```
 
+## Usage
+To start the server run:
+
+```bash
+grunt server
+```
+
 See the [docs](docs/) directory for more information.
 
 -----
