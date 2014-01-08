@@ -10,6 +10,24 @@ Coders Classroom
 
 Online classroom environment, designed by coders for coders. Great for educators and students alike.
 
+-----
+
+![System Setup](https://docs.google.com/drawings/d/14KqaC1bBqG2D2H2uvFN4BzQNMO0UYOMGHB6jaBZeFuI/pub?w=960&amp;h=720)
+
+-----
+
+### Installation
+Run the following Bash command:
+
+```bash
+git clone https://github.com/Glavin001/Coders-Classroom.git && \
+node install
+```
+
+See the [docs](docs/) directory for more information.
+
+-----
+
 ## Reason for creating this Application
 There are many [Course Management System (CMS), also known as a Learning Management System (LMS) or a Virtual Learning Environment (VLE), the one I am most familiar with being Moodle](https://moodle.org/). These systems are designed for learning in general, with many different subjects. **Coders Classroom** is designed from the ground up with programmers in mind, and so will be very powerful in the hands of both educators and students who know or want to learn about programming.
 
@@ -66,6 +84,9 @@ Accounts are linked to either a [GitLab](http://gitlab.org/) account.
 The user must first have an account first a GitLab installation then sign up and sign in with that account. The user's email is used as the unqiue username. A local GitLab installation is choosen because this can be setup by an organization and run for educational purposes for free and allow for both Private and Public projects.
 
 ### Creating a Class
+
+![What happens when creating a class](https://docs.google.com/drawings/d/1D-ZWZfRpOhdCo1X5mSXc2Nr8o5pkeB2wboKX_lEDZio/pub?w=1549&amp;h=743)
+
 An Educator can easily create a new class. In fact, a student can act as an "Open-Source Educator" and create their own Class.
 
 ### Creating an Exercise
