@@ -20,7 +20,7 @@ git clone https://github.com/Glavin001/Coders-Classroom.git && \
 node install
 ```
 
-See the [documentation](documentation/) directory for more information.
+See the [docs](docs/) directory for more information.
 
 -----
 
