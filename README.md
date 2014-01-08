@@ -1,18 +1,30 @@
 Coders Classroom
 ================
 
+[![Build Status](https://travis-ci.org/Glavin001/Coders-Classroom.png?branch=master)](https://travis-ci.org/Glavin001/Coders-Classroom)
+[![Dependency Status](https://david-dm.org/Glavin001/Coders-Classroom.png)](https://david-dm.org/Glavin001/Coders-Classroom)
+[![status](https://sourcegraph.com/api/repos/github.com/Glavin001/Coders-Classroom/badges/status.png)](https://sourcegraph.com/github.com/Glavin001/Coders-Classroom)
+[![authors](https://sourcegraph.com/api/repos/github.com/Glavin001/Coders-Classroom/badges/authors.png)](https://sourcegraph.com/github.com/Glavin001/Coders-Classroom)
+[![Total views](https://sourcegraph.com/api/repos/github.com/Glavin001/Coders-Classroom/counters/views.png)](https://sourcegraph.com/github.com/Glavin001/Coders-Classroom)
+[![Views in the last 24 hours](https://sourcegraph.com/api/repos/github.com/Glavin001/Coders-Classroom/counters/views-24h.png)](https://sourcegraph.com/github.com/Glavin001/Coders-Classroom)
+
 Online classroom environment, designed by coders for coders. Great for educators and students alike.
 
 ## Reason for creating this Application
 There are many [Course Management System (CMS), also known as a Learning Management System (LMS) or a Virtual Learning Environment (VLE), the one I am most familiar with being Moodle](https://moodle.org/). These systems are designed for learning in general, with many different subjects. **Coders Classroom** is designed from the ground up with programmers in mind, and so will be very powerful in the hands of both educators and students who know or want to learn about programming.
 
-## Students Will Learn
+## Goals
+### Students Will Learn Important Skills
 - **Git** - [Git](http://git-scm.com/) (backed by [GitLab HQ](http://gitlab.org/)) is used as the medium for storing, updating, and sharing (including submitting) student exercises and assignents.
 - **Unit Testing** - Automated grading of exercises are performed in a similar manner as [Unit Tests](http://en.wikipedia.org/wiki/Unit_testing), so students can get used to making their own, and having their code evaulated by tests, such as in [Test-Driven Development](http://en.wikipedia.org/wiki/Test-driven_development).
 - **Issue Tracking** - With [GitLab]((http://gitlab.org/) backing each student's project, they are encouraged to create and resolve issues as they progress through their class exercises and assignments.
 - **Version Control** - [Git](http://git-scm.com/) is a distributed version control system, and knowing how to use a version control system will be important when working on industry-standard programs.
 - **Team Work** - With [GitLab]((http://gitlab.org/), it is easy to add members to projects and collaborate on projects; and the Issue Tracker makes it even easier to manage who is doing what.
 - **Deadlines / Milestones** - It is very important hit your project deadlines. This should be the case for both work and school.
+
+### Educators Will Be More Efficient at Educating
+- **Automated Grading** - Exercises can be quickly, and automatically, graded and feedback sent to the student for improvements. 
+- **Class Statistics** - Class progress can be monitored and can easily narrow in on the aspects that individual students are struggling with.
 
 ## Foundation
 - Written in [Node.js](http://nodejs.org/)
