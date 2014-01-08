@@ -19,16 +19,24 @@ function hasWhiteSpace(s) {
 }
 
 // Check for White Space in Path, Issue #11.
-if ( 
-        !require('nodegit') && // Checking if nodegit is successfully installed
-        hasWhiteSpace(__dirname) // if nodegit is not installed, verify the installation path does not contain spaces
-        ) {
-    console.error("Your installation directory has white space characters.");
-    console.log("See issue at https://github.com/Glavin001/Coders-Classroom/issues/11");
-    console.log("We recommend changing your path from '"+__dirname+"' to '"+__dirname.replace(/\s/g, "_")+"' that users '_' underscoes instead of spaces.");
-    console.log();
+try {
+    require('nodegit') // Checking if nodegit is successfully installed
+} catch (e) {
+    // nodegit not found    
+    if ( 
+            hasWhiteSpace(__dirname) // if nodegit is not installed, verify the installation path does not contain spaces
+            ) {
+        console.error("Your installation directory has white space characters.");
+        console.log("See issue at https://github.com/Glavin001/Coders-Classroom/issues/11");
+        console.log("We recommend changing your path from: ")
+        console.log("> '"+__dirname+"'");
+        console.log("to: ");
+        console.log("> '"+__dirname.replace(/\s/g, "_")+"'");
+        console.log("such that you use underscores ('_') instead of spaces.");
+        console.log();
 
-    process.exit(1);
+        process.exit(1);
+    }
 }
 
 // NPM Install
