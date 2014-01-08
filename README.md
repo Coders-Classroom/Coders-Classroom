@@ -24,7 +24,7 @@ git clone https://github.com/Glavin001/Coders-Classroom.git && \
 node install
 ```
 
-## Usage
+### Usage
 To start the server run:
 
 ```bash
