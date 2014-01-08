@@ -20,6 +20,7 @@
     , "mongoose": "3.8.3"
     , "icalendar": "0.6.3"
     , "nodegit": "0.1.0"
+    , "prompt": "0.2.12"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
