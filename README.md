@@ -10,6 +10,20 @@ Coders Classroom
 
 Online classroom environment, designed by coders for coders. Great for educators and students alike.
 
+-----
+
+### Installation
+Run the following Bash command:
+
+```bash
+git clone https://github.com/Glavin001/Coders-Classroom.git && \
+node install
+```
+
+See the [documentation](documentation/) directory for more information.
+
+-----
+
 ## Reason for creating this Application
 There are many [Course Management System (CMS), also known as a Learning Management System (LMS) or a Virtual Learning Environment (VLE), the one I am most familiar with being Moodle](https://moodle.org/). These systems are designed for learning in general, with many different subjects. **Coders Classroom** is designed from the ground up with programmers in mind, and so will be very powerful in the hands of both educators and students who know or want to learn about programming.
 
