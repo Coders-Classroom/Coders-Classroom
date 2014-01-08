@@ -3,6 +3,7 @@
 // Dependencies
 var sys = require("sys");
 var exec = require("child_process").exec;
+var spawn = require("child_process").spawn;
 var pkg = require("./package.json");
 
 // Display Banner
@@ -41,19 +42,48 @@ try {
 
 // NPM Install
 var npmInstall = function(package, callback) {
+    /*
     exec('npm install '+(package||""), function(error, stdout, stderr) {
         callback(error,stdout,stderr);
     });
+    */
+
+    var child = spawn('npm', ['install', (package||"")]);
+    child.stdout.on('data', function(chunk) {
+        //console.log(chunk.toString());
+    	process.stdout.write(chunk.toString());
+    });
+    child.stderr.on('data', function(chunk) {
+        //console.error(chunk.toString());
+    	process.stdout.write(chunk.toString());
+    });
+    child.on('close', function(code, signal) {
+        callback(code, signal);
+    });
+
 };
 
 // Bower Install
-var bowerInstall = function(package, callback) {
+var bowerInstall = function(package, callback) { // FIXME: package argument doesn't work.
     try {
         require('bower') // Checking if bower is successfully installed
         
-        var bowerCmd = "./node_modules/bower/bin/bower";
+        var bowerCmd = "bower"; //"node_modules/bower/bin/bower";
+        /*
         exec(bowerCmd+' install '+(package||""), function(error, stdout, stderr) {
-            callback(error,stdout,stderr);
+                callback(error,stdout,stderr);
+            });
+        */
+        //console.log(bowerCmd, package);
+        var child = spawn(bowerCmd, ['install']);
+        child.stdout.on('data', function(chunk) {
+            process.stdout.write(chunk.toString());
+        });
+        child.stderr.on('data', function(chunk) {
+            process.stdout.write(chunk.toString());
+        });
+        child.on('close', function(code, signal) {
+            callback(code, signal);
         });
     } catch (e) {
         callback(e, null, "Bower not installed.");
