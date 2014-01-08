@@ -12,6 +12,10 @@ Online classroom environment, designed by coders for coders. Great for educators
 
 -----
 
+![System Setup](https://docs.google.com/drawings/d/14KqaC1bBqG2D2H2uvFN4BzQNMO0UYOMGHB6jaBZeFuI/pub?w=960&amp;h=720)
+
+-----
+
 ### Installation
 Run the following Bash command:
 
