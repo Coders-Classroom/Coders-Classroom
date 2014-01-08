@@ -48,38 +48,40 @@ var npmInstall = function(package, callback) {
 
 // Bower Install
 var bowerInstall = function(package, callback) {
-    exec('bower install '+(package||""), function(error, stdout, stderr) {
-        callback(error,stdout,stderr);
-    });
+    try {
+        require('bower') // Checking if bower is successfully installed
+        
+        var bowerCmd = "./node_modules/bower/bin/bower";
+        exec(bowerCmd+' install '+(package||""), function(error, stdout, stderr) {
+            callback(error,stdout,stderr);
+        });
+    } catch (e) {
+        callback(e, null, "Bower not installed.");
+    }
 };
 
 // Install Dependencies
-console.log("Installing dependencies...");
-//yesno.ask("Would you like to install all node dependencies with 'npm install'?", true, function(npmOk) {
-    //yesno.ask("Would you like to install all bower dependencies with 'npm install'?", true, function(bowerOk) {
-        if (true || npmOk) {
-            npmInstall(null, function(error, stdout, stderr) {
-                if (error) {
-                    console.log(error, stderr);
-                    console.log();
-                    console.log("For more information, run `npm install` again on your own.");
-                } else {
-                    console.log("NPM successfully installed dependencies.");
-                }
-            });
-        }
-        if (true || bowerOk) {
-            bowerInstall(null, function(error, stdout, stderr) {
-                if (error) {
-                    console.log(error, stderr);
-                    console.log();
-                    console.log("For more information, run `bower install` again on your own.");
-                } else {
-                    console.log("Bower successfully installed dependencies.");
-                }
-            });
-        }
-    //});
-//});
+console.log("Installing NPM dependencies.");
+npmInstall(null, function(error, stdout, stderr) {
+    if (error) {
+        console.log(error, stderr);
+        console.log();
+        console.log("For more information, run `npm install` again on your own.");
+    } else {
+        console.log("=> NPM successfully installed dependencies.");
+        console.log();
+        console.log("Installing Bower dependencies.");
+        bowerInstall(null, function(error, stdout, stderr) {
+            if (error) {
+                console.log(error, stderr);
+                console.log();
+                console.log("For more information, run `bower install` again on your own.");
+            } else {
+                console.log("=> Bower successfully installed dependencies.");
+                console.log();
+            }
+        });
 
+    }
+});
 
