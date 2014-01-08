@@ -18,7 +18,7 @@
     , "passport": "0.1.18"
     , "feathers": "0.3.0"
     , "mongoose": "3.8.3"
-    , "icalendar": "0.6.3"
+    , "icalendar": "0.6.5"
     , "nodegit": "0.1.0"
     , "prompt": "0.2.12"
     , "yesno": "0.0.1"

@@ -1,9 +1,8 @@
+#!/usr/bin/env node
 
 // Dependencies
 var sys = require("sys");
 var exec = require("child_process").exec;
-//var prompt = require("prompt");
-var yesno = require('yesno');
 var pkg = require("./package.json");
 
 // Display Banner
@@ -13,9 +12,6 @@ console.log("===== "+pkg.name+", "+pkg.version);
 console.log("===== "+pkg.description);
 console.log("=====");
 console.log();
-
-// Start Prompt
-prompt.start();
 
 // Helpers
 function hasWhiteSpace(s) {
@@ -50,28 +46,32 @@ var bowerInstall = function(package, callback) {
 };
 
 // Install Dependencies
-yesno.ask("Would you like to install all node dependencies with 'npm install'?", true, function(npmOk) {
-    yesno.ask("Would you like to install all bower dependencies with 'npm install'?", true, function(bowerOk) {
-        if (npmOk) {
+console.log("Installing dependencies...");
+//yesno.ask("Would you like to install all node dependencies with 'npm install'?", true, function(npmOk) {
+    //yesno.ask("Would you like to install all bower dependencies with 'npm install'?", true, function(bowerOk) {
+        if (true || npmOk) {
             npmInstall(null, function(error, stdout, stderr) {
                 if (error) {
                     console.log(error, stderr);
+                    console.log();
+                    console.log("For more information, run `npm install` again on your own.");
                 } else {
                     console.log("NPM successfully installed dependencies.");
                 }
             });
         }
-        if (bowerOk) {
+        if (true || bowerOk) {
             bowerInstall(null, function(error, stdout, stderr) {
                 if (error) {
                     console.log(error, stderr);
+                    console.log();
+                    console.log("For more information, run `bower install` again on your own.");
                 } else {
                     console.log("Bower successfully installed dependencies.");
                 }
             });
         }
-    });
-});
+    //});
+//});
 
-console.log();
 
