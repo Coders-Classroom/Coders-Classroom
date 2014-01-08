@@ -1,6 +1,8 @@
 Coders Classroom
 ================
 
+[![Build Status](https://travis-ci.org/Glavin001/Coders-Classroom.png?branch=master)](https://travis-ci.org/Glavin001/Coders-Classroom)
+
 Online classroom environment, designed by coders for coders. Great for educators and students alike.
 
 ## Reason for creating this Application
