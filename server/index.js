@@ -41,8 +41,13 @@ app = app.configure(feathers.socketio(function(io) {
         }, callback);
     });
     */
-    console.log(io);
+    //console.log(io);
 }));
+
+// Display Ember.js App
+app.use(feathers.static(path.join(__dirname, '../.tmp')));
+app.use(feathers.static(path.join(__dirname, '../app')));
+
 // Add Services
 require("./services/")(app, path.join("/api", "v1"));
 

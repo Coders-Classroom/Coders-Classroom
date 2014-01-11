@@ -13,6 +13,7 @@ var mountFolder = function (connect, dir) {
 // 'test/spec/**/*.js'
 
 var path = require('path');
+//console.log( path.resolve(__dirname, './server/index.js') );
 
 module.exports = function (grunt) {
     // show elapsed time at the end
@@ -56,14 +57,19 @@ module.exports = function (grunt) {
                     '{.tmp,<%= yeoman.app %>}/styles/{,*/}*.css',
                     '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
                     // Server
-                    ,'server/**'
+                    //,'server/**.js'
                 ]
             }
         },
         express: {
             options: {
+                    debug: true,
                     port: '<%= connect.options.port %>',
                     hostname: '<%= connect.options.hostname %>'
+                , livereload: true // if you just specify `true`, default port `35729` will be used
+                , serverreload: true
+                //, open: true // 
+                , showstack: true
             },
             livereload: {
                 server: path.resolve(__dirname, './server/index.js')
@@ -73,6 +79,7 @@ module.exports = function (grunt) {
                 ]
                 , livereload: true // if you just specify `true`, default port `35729` will be used
                 , serverreload: true
+                , showstack: true
             },
             dist: {
                 bases: [ 
@@ -350,6 +357,8 @@ module.exports = function (grunt) {
             }
         }
     });
+    
+    
 
     grunt.registerTask('server', function (target) {
         if (target === 'dist') {
@@ -361,6 +370,7 @@ module.exports = function (grunt) {
             'replace:app',
             'concurrent:server',
             'neuter:app',
+            //'express:livereload',
             'connect:livereload',
             'open',
             'watch'
