@@ -2,7 +2,7 @@ Coders Classroom
 ================
 
 [![Build Status](https://travis-ci.org/Coders-Classroom/Coders-Classroom.png?branch=master)](https://travis-ci.org/Coders-Classroom/Coders-Classroom)
-[![Dependency Status](https://david-dm.org/Coders-Classroom/Coders-Classroom.png)](https://david-dm.org/Glavin001/Coders-Classroom)
+[![Dependency Status](https://david-dm.org/Coders-Classroom/Coders-Classroom.png)](https://david-dm.org/Coders-Classroom/Coders-Classroom)
 [![authors](https://sourcegraph.com/api/repos/github.com/Coders-Classroom/Coders-Classroom/badges/authors.png)](https://sourcegraph.com/github.com/Coders-Classroom/Coders-Classroom)
 [![Total views](https://sourcegraph.com/api/repos/github.com/Coders-Classroom/Coders-Classroom/counters/views.png)](https://sourcegraph.com/github.com/Coders-Classroom/Coders-Classroom)
 [![Views in the last 24 hours](https://sourcegraph.com/api/repos/github.com/Coders-Classroom/Coders-Classroom/counters/views-24h.png)](https://sourcegraph.com/github.com/Coders-Classroom/Coders-Classroom)
@@ -19,18 +19,47 @@ Online classroom environment, designed by coders for coders. Great for educators
 Run the following Bash command:
 
 ```bash
-git clone https://github.com/Glavin001/Coders-Classroom.git && \
+git clone https://github.com/Coders-Classroom/Coders-Classroom.git && \
 node install
 ```
 
 ### Usage
 To start the server run:
 
+#### 1. Building Ember.js for first time
+This will process the current [app](./app) directory into compiled static public files.
+
 ```bash
-grunt server
+grunt build
+```
+
+#### 2. Starting Server
+This will start the Node.js server and will serve both the Ember.js App and the `Coders Classroom` API.
+
+```bash
+node server/index.js
+```
+
+##### 3. For Developers
+This will watch for file changes and re-compile your source code. Does not support `livereload`, so refresh your browser to see changes.
+
+```bash
+grunt watch
+```
+
+**Note**: The Grunt task `watch` will only update changed files, it will not `build` all other files, until they have been changed.
+
+For an all in one command:
+
+```bash
+grunt build watch
 ```
 
 See the [docs](docs/) directory for more information.
+
+### Contributing
+
+Please see this issue: https://github.com/Coders-Classroom/Coders-Classroom/issues/1
 
 -----
 
@@ -73,11 +102,6 @@ There are many [Course Management System (CMS), also known as a Learning Managem
 - Support for basic compiing and execution of code in the following common programming languages: C, C++, Python, and JavaScript (Node.js).
 
 -----
-
-## Contributing
-
-Please see this issue: https://github.com/Glavin001/Coders-Classroom/issues/1
-
 
 ## High-Level Description of Concept
 
