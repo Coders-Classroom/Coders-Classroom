@@ -102,8 +102,8 @@ module.exports = function (grunt) {
                         return [
                             lrSnippet,
                             mountFolder(connect, '.tmp'),
-                            mountFolder(connect, yeomanConfig.app),
-                            require('./server')
+                            mountFolder(connect, yeomanConfig.app)
+                            //, require('./server')
                         ];
                     }
                 }

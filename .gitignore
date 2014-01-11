@@ -1,9 +1,16 @@
-node_modules
+# Generated
 temp
 dist
 .sass-cache
 .tmp
+.privateContent
+
+# Downloaded with Package Managers (NPM or Bower)
+node_modules
 app/bower_components
+
+# Configuration
+config.json
 
 # Mac
 .DS_Store
