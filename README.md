@@ -15,6 +15,14 @@ Online classroom environment, designed by coders for coders. Great for educators
 
 -----
 
+### Requirements
+- Node.js and NPM: http://nodejs.org/
+- Bower: http://bower.io/
+`npm install -g bower`
+- Grunt: http://gruntjs.com/
+`npm install -g grunt-cli`
+
+
 ### Installation
 Run the following Bash command:
 
