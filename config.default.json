@@ -1,4 +1,4 @@
 {
     "port": 8080
-    , "contentDirectory": "./privateContent" 
+    , "contentDirectory": "./.privateContent" 
 }

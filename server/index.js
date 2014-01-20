@@ -3,7 +3,6 @@ var nconf = require('nconf');
 var feathers = require('feathers');
 var path = require('path');
 var pkg = require("../package.json");
-var git = require('nodegit');
 
 //
 // Setup nconf to use (in-order):
@@ -17,8 +16,8 @@ nconf.argv()
    .file('default', { file: path.resolve(__dirname, '../config.default.json') });
 
 // Properties
-var contentDir = path.resolve(__dirname, '../', nconf.get('contentDirectory') );
-console.log('Content Directory: ', contentDir);
+nconf.set('contentDirectory', path.resolve(__dirname, '../', nconf.get('contentDirectory') ));
+console.log('Content Directory: ', nconf.get('contentDirectory'));
 
 // Configure
 var app = feathers();
@@ -72,34 +71,36 @@ require("./services/")(app, path.join("/api", "v1"));
 // Start server
 app.listen(nconf.get('port'));
 console.log('Express server started on port', nconf.get('port'));
+console.log('In your web browser, go to: http://localhost:'+nconf.get('port'));
 
 // Export server.
 module.exports = app;
 
-/*
-// Test `nodegit`
-var cloneDir = path.join(contentDir, './clones');
-console.log(cloneDir);
-git.Repo.clone("https://github.com/nodegit/nodegit.git", cloneDir, null, function(error, repo) {
-  if (error) throw error;
+// Test
+var Project = require('./modules/project');
+var p = new Project('Streamlyne', 'SL-JavaScript-SDK');
+p.pull('http://git.streamlyne.co/streamlyne/sl-javascript-sdk.git', function(error, project) {
+    var repo = project.repo;
 
-  repo.getCommit('59b20b8d5c6ff8d09518454d4dd8b7b30f095ab5', function(error, commit) {
-    if (error) throw error;
+    console.log(error, project, repo);
 
-    commit.getEntry('README.md', function(error, entry) {
-      if (error) throw error;
-
-      entry.getBlob(function(error, blob) {
+    repo.getMaster(function(error, commit) {
         if (error) throw error;
 
-        console.log(entry.name(), entry.sha(), blob.size() + 'b');
-        console.log('========================================================\n\n');
-        var firstTenLines = blob.toString().split('\n').slice(0, 10).join('\n');
-        console.log(firstTenLines);
-        console.log('...');
-      });
+        commit.getEntry('README.md', function(error, entry) {
+          if (error) throw error;
+
+          entry.getBlob(function(error, blob) {
+            if (error) throw error;
+
+            console.log(entry.name(), entry.sha(), blob.size() + 'b');
+            console.log('========================================================\n\n');
+            var firstTenLines = blob.toString().split('\n').slice(0, 10).join('\n');
+            console.log(firstTenLines);
+            console.log('...');
+          });
+        });
     });
-  });
+
 });
-*/
 
